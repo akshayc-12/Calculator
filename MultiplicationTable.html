@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Application</title>
+
+    <link href="Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="Content/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+
+    <script src="Scripts/Site.js" ></script>
+
+</head>
+
+<body>
+    <form>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="index.html">Application name</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="index.html">Home</a></li>
+                        <li><a runat="server" href="About.html">About</a></li>
+                        <li><a runat="server" href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <div>
+
+                <!-- Page Content Start -->
+                
+                
+                    <div style="width:35%;margin:20px">
+                        <table id="enterInfo" style="text-align:center;" class="table table-sm bg-info">
+                            <tr>
+                                <th style="text-align:right">Enter Number :</th>
+                                <td><input type="text" id="tbtNumber" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align:center"><button type="button" class="btn btn-primary" id="GenMulTbl"
+                                        onclick="GenerateTable()">Generate Multiplication Table</button></td>
+                            </tr>
+                        </table>
+                
+                        <label style="color:red;visibility:collapse" class="bg-warning" id="warning"></label>
+                
+                        <table id="genInfo" style="visibility:collapse;text-align:center" class="table table-sm">
+                            <tr>
+                                <th style="text-align:center" colspan="5" class="bg-primary">Multiplication Table</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> X </td>
+                                <td></td>
+                                <td> = </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> X </td>
+                                <td></td>
+                                <td> = </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> X </td>
+                                <td></td>
+                                <td> = </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> X </td>
+                                <td></td>
+                                <td> = </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> X </td>
+                                <td></td>
+                                <td> = </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> X </td>
+                                <td></td>
+                                <td> = </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> X </td>
+                                <td></td>
+                                <td> = </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> X </td>
+                                <td></td>
+                                <td> = </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> X </td>
+                                <td></td>
+                                <td> = </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> X </td>
+                                <td></td>
+                                <td> = </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                <!-- Page Content End -->
+
+            </div>
+            <hr />
+            <footer>
+                <p>Calculator Application</p>
+            </footer>
+        </div>
+    </form>
+</body>
+
+</html>
