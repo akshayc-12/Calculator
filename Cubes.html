@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
+    <title>Cubes</title>
 
     <link href="Content/bootstrap-grid.css" rel="stylesheet" />
     <link href="Content/bootstrap-grid.min.css" rel="stylesheet" />
@@ -18,7 +18,7 @@
     <link href="Content/Site.css" rel="stylesheet" />
     <link href="Content/home.css" rel="stylesheet" />
 
-
+    <script src="Scripts/Site.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/jquery-3.4.1.js"></script>
@@ -42,11 +42,10 @@
         </button>
         <div class="navbar-collapse collapse">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home <span
-                            class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="MultiplicationTable.html">Multiplication Table</a></li>
                             <li class="nav-item"><a class="nav-link" href="Squares.html">Squares</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Cubes.html">Cubes</a></li>
+                            <li class="nav-item"><a class="nav-link  active" href="Cubes.html">Cubes</a></li>
                             <li class="nav-item"><a class="nav-link" href="Factorial.html">Factorial</a></li>
                             
                 <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
@@ -55,47 +54,45 @@
         </div>
     </header>
 
+
     <div class="container body-content">
 
-        <!-- Page Content Start -->
+                <!-- Page Content Start -->
 
-        <div class="container bootstrap snippets bootdey" style="margin-top: 20px;">
-            <div class="row">
-                
-                <a href="MultiplicationTable.html" class="col-sm-2">
-                    <div class="tile blue">
-                        <h3 class="title" style="font-weight: bold;">Multiplication Table</h3>
-                        <p>Multiplication Table</p>
-                    </div>
-                </a>
-                <a href="Squares.html" class="col-sm-2">
-                    <div class="tile blue">
-                        <h3 class="title" style="font-weight: bold;">Squares</h3>
-                        <p>Squares</p>
-                    </div>
-                </a>
-                <a href="Cubes.html" class="col-sm-2">
-                    <div class="tile blue">
-                        <h3 class="title" style="font-weight: bold;">Cubes</h3>
-                        <p>Cubes</p>
-                    </div>
-                </a>
-                <a href="Factorial.html" class="col-sm-2">
-                    <div class="tile blue">
-                        <h3 class="title" style="font-weight: bold;">Factorial</h3>
-                        <p>Factorial</p>
-                    </div>
-                </a>
+
+                <div style="max-width: 480px;margin:20px">
+                    <table id="enterInfo" style="text-align:center;" class="table table-sm bg-info">
+                        <tr>
+                            <th style="text-align:center">Enter Number :</th>
+                            <td><input type="text" id="tblNumber" class="form-control" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align:center"><button type="button" class="btn btn-primary" id="GenSq"
+                                    onclick="GetPOW(3)">Get Cube</button>
+                                    <button type="button" class="btn btn-primary" id="ListSqs"
+                                    onclick="GetPOWs(3,11)">List Cubes</button></td>
+                        </tr>
+                    </table>
+            
+                    <label style="color:red;visibility:collapse" class="bg-warning" id="warning"></label>
+
+                    <label id="result"></label>
+
+                    <table id="genInfo" style="visibility:collapse;text-align:center" class="table table-sm table-striped">
+                        <tr>
+                            <th style="text-align:center" colspan="7" class="bg-primary">List of Cubes</th>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <!-- Page Content End -->
+
+                <footer>
+                    <hr style="color: blue; background-color:blue;height: 3px;" />
+                    <p id="footer">Calculator Application</p>
+                </footer>
             </div>
-        </div>
-
-        <!-- Page Content End -->
-
-        <footer>
-            <hr style="color: blue; background-color:blue;height: 3px;" />
-            <p id="footer">Calculator Application</p>
-        </footer>
-    </div>
 </body>
 
 </html>
