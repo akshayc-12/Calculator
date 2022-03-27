@@ -40,4 +40,10 @@ header,footer{
     font-weight: bold;
 }
 
+.heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 
